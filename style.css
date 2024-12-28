@@ -63,26 +63,26 @@ body {
 
 .days-display {
     font-size: 4rem; /* Adjusted for better visibility */
-    background: rgba(0, 0, 0, 0.768);
-    color: rgb(255, 255, 255);
+    /* background: rgba(0, 0, 0, 0.768); */
+    color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px; /* Maintain spacing between sections */
+    /* margin-bottom: 20px; Maintain spacing between sections */
     text-shadow: 0px 0px 50px rgba(245, 220, 145, 0.801); /* White light shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds subtle shadow around the element */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); Adds subtle shadow around the element */
 }
 
 .time-display {
     font-size: 8rem; /* Increased font size for better visibility */
-    color: white; /* Ensures text is white for better contrast */
-    background: rgba(0, 0, 0, 0.66);
+    color: rgb(0, 0, 0); /* Ensures text is white for better contrast */
+    /* background: rgba(0, 0, 0, 0.66); */
     padding: 15px 25px; /* Adjust padding to better fit larger text */
     border-radius: 10px;
     display: flex;
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
     text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5); /* White light shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Consistent shadow with .days-display */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); Consistent shadow with .days-display */
 }
 
 .digital-font {
