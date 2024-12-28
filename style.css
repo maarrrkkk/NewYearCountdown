@@ -105,7 +105,7 @@ body {
 
 @font-face {
     font-family: 'Digital';
-    src: url('../assets/DS-DIGI.TTF') format('truetype');
+    src: url('/assets/DS-DIGI.TTF') format('truetype');
 }
 
 /* Responsive styles for phone screens */
