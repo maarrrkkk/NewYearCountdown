@@ -55,8 +55,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 body {
-    background: url('https://media.tenor.com/images/xxxxxxx/tenor.gif') no-repeat center center fixed;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the body is at least the height of the viewport */
@@ -107,7 +105,7 @@ body {
 
 @font-face {
     font-family: 'Digital';
-    src: url('../assets/DS-DIGI.TTF') format('truetype'); /* Correct relative path to the font file */
+    src: url('assets/DS-DIGI.TTF') format('truetype'); /* Correct relative path to the font file */
 }
 
 /* Responsive styles for phone screens */
