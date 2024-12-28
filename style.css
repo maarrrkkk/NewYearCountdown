@@ -105,7 +105,7 @@ body {
 
 @font-face {
     font-family: 'Digital';
-    src: url('main/assets/DS-DIGI.TTF') format('truetype');
+    src: url('/NewYearCountdown/main/assets/DS-DIGI.TTF') format('truetype');
 }
 
 /* Responsive styles for phone screens */
