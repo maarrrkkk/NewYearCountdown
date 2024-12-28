@@ -278,7 +278,7 @@ body.dark-mode {
 
 .dark-mode .days-display,
 .dark-mode .time-display{
-    color: #000000; /* White text color */
+    color: #ffffff; /* White text color */
 }
 
 .dark-mode h1 {
