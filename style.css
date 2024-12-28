@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+
+    color: rgb(0, 251, 255);
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 100px; /* Corrected property */
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-shadow: 0px 0px 50px rgb(255, 255, 255); /* White light shadow */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none; /* For WebKit browsers */
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-container {
+    z-index: 1;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 250px; /* Adds padding to ensure footer does not cover content */
+}
+
+body {
+    background: url('https://media.tenor.com/images/xxxxxxx/tenor.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+    font-family: 'Arial', sans-serif;
+}
+
+.days-display {
+    font-size: 4rem; /* Adjusted for better visibility */
+    background: rgba(0, 0, 0, 0.768);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Maintain spacing between sections */
+    text-shadow: 0px 0px 50px rgba(245, 220, 145, 0.801); /* White light shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds subtle shadow around the element */
+}
+
+.time-display {
+    font-size: 8rem; /* Increased font size for better visibility */
+    color: white; /* Ensures text is white for better contrast */
+    background: rgba(0, 0, 0, 0.66);
+    padding: 15px 25px; /* Adjust padding to better fit larger text */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5); /* White light shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Consistent shadow with .days-display */
+}
+
+.digital-font {
+    font-family: 'Digital', monospace; /* Assumes 'Digital' font is properly defined and loaded */
+}
+
+.time-display span {
+    margin: 0 15px; /* Adds horizontal spacing between each part */
+}
+
+/* Animation number */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url('../assets/DS-DIGI.TTF') format('truetype'); /* Correct relative path to the font file */
+}
+
+/* Responsive styles for phone screens */
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 70px; /* Smaller font size for small screens */
+    }
+    .days-display, .time-display {
+        font-size: 4rem; /* Reduce font size to fit on one line */
+        padding: 10px 15px; /* Reduce padding to save space */
+    }
+    .time-display span {
+        margin: 0 10px; /* Smaller margin for tighter spacing */
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    #dark-mode-toggle {
+        font-size: 12px;
+        position: absolute;
+        top: 20px; /* Distance from the top of the viewport */
+        left: 20px; /* Distance from the left side of the viewport */
+        z-index: 1000; /* Ensure the button is above other content */
+    }
+    #font-toggle {
+        font-size: 12px;
+        position: absolute;
+        top: 0px; /* Distance from the top of the viewport */
+        left: 20px; /* Distance from the left side of the viewport */
+        z-index: 1000; /* Ensure the button is above other content */
+    }
+    h1 {
+        font-size: 50px; /* Smaller font size for small screens */
+    }
+    .days-display, .time-display {
+        font-size: 2rem; /* Reduce font size to fit on one line */
+        padding: 10px 15px; /* Reduce padding to save space */
+    }
+    .time-display span {
+        margin: 0 10px; /* Smaller margin for tighter spacing */
+    }
+}
+
+@media (max-width: 500px) {
+    #dark-mode-toggle {
+        font-size: 12px;
+        position: absolute;
+        top: 20px; /* Distance from the top of the viewport */
+        left: 20px; /* Distance from the left side of the viewport */
+        z-index: 1000; /* Ensure the button is above other content */
+    }
+    #font-toggle {
+        font-size: 12px;
+        position: absolute;
+        top: 10px; /* Distance from the top of the viewport */
+        left: 20px; /* Distance from the left side of the viewport */
+        z-index: 1000; /* Ensure the button is above other content */
+    }
+    h1 {
+        font-size: 40px; /* Smaller font size for small screens */
+    }
+    .days-display, .time-display {
+        font-size: 2rem; /* Reduce font size to fit on one line */
+        padding: 10px 0px; /* Reduce padding to save space */
+    }
+    .time-display span {
+        margin: 0 0px; /* Smaller margin for tighter spacing */
+    }
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px; /* Distance from the top of the viewport */
+    left: 20px; /* Distance from the left side of the viewport */
+    z-index: 1000; /* Ensure the button is above other content */
+}
+
+#font-toggle {
+    position: absolute;
+    top: 60px; /* Distance from the top of the viewport */
+    left: 20px; /* Distance from the left side of the viewport */
+    z-index: 1000; /* Ensure the button is above other content */
+}
+
+button {
+    padding: 0.3em 1em;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background: #1111116e;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button::before {
+    content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowinbutton 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowinbutton {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  button:active {
+    color: #0000007f;
+  }
+  
+  button:active:after {
+    background: transparent;
+  }
+  
+  button:hover:before {
+    opacity: 1;
+  }
+  
+  button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000082;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+/* Dark mode specific styles */
+body.dark-mode {
+    background: #000000; /* Darker background */
+    color: #ccc; /* Lighter text for readability */
+}
+
+.dark-mode .days-display,
+.dark-mode .time-display{
+    background: rgb(255, 255, 255); /* Darker backgrounds for elements */
+    box-shadow: 0 4px 8px rgba(201, 201, 201, 0.5); /* Adds subtle shadow around the element */
+    color: #000000; /* White text color */
+}
+
+.dark-mode h1 {
+
+    color: #ffff;
+}
+
+footer {
+    background-color: #285686; /* Dark background for visibility */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center text alignment */
+}
+
+h3 {
+    font-size: 50px;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+footer .container {
+    padding-bottom: 0px; /* Adds padding at the bottom of the container */
+}
+
+.text-uppercase {
+    margin-bottom: 10px; /* Reduced margin for headers */
+}
+
+p {
+    margin-bottom: 10px; /* Uniform paragraph spacing */
+}
+
+.fa-home, .fa-envelope, .fa-phone, .fa-print {
+    margin-right: 2px; /* Small right margin for icons for better spacing */
+}
+
+/* Enhance visibility and interaction */
+.btn-social-icon i {
+    font-size: 20px; /* Increase icon size slightly for better visibility */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-fill wrapper">
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        <button id="font-toggle" onclick="toggleChangeFont()">Change Font</button>
+        <div class="container text-center display-container">
+            <h1 class="my-5"><b>New Year Countdown</b></h1>
+            <div id="days-section" class="days-display">
+                <span id="days">00</span> Days left
+            </div>
+            <div id="time-section" class="time-display">
+                <span id="hours">00</span>h :
+                <span id="minutes">00</span>m :
+                <span id="seconds">00</span>s
+            </div>  
+        </div>
+    </div>
+    <footer class="bg-dark text-white mt-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <h5 class="text-uppercase mb-3 font-weight-bold">Developed By</h5>
+                    <h3 class="mb-3">John Mark Aguilar</h3>
+                    <h5 class="text-uppercase mb-3 font-weight-bold">Contact</h5>
+                    <p class="mb-1">
+                            <i class="fas fa-home mr-3"></i> Philippines | Samar | Calbayog City | Brgy, San Policarpo
+                    </p>
+                    <p class="mb-1">
+                        <i class="fas fa-envelope mr-3"></i> <a target="_blank" href="https://instagram.com/maarrk_06?igshid=MzMyNGUyNmU2YQ==">Instagram</a>
+                    </p>
+                    <p class="mb-1"> 
+                        <i class="fas fa-phone mr-3"></i> <a target="_blank" href="https://www.facebook.com/johnmark.aguilar.940?mibextid=ZbWKwL">Facebook</a>
+                    </p>
+                    <p class="mb-3"> 
+                        <i class="fas fa-print mr-3"></i>  <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=userjohnmarkaguilar405@gmail.com.com">Gmail</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>
