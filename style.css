@@ -278,8 +278,6 @@ body.dark-mode {
 
 .dark-mode .days-display,
 .dark-mode .time-display{
-    background: rgb(255, 255, 255); /* Darker backgrounds for elements */
-    box-shadow: 0 4px 8px rgba(201, 201, 201, 0.5); /* Adds subtle shadow around the element */
     color: #000000; /* White text color */
 }
 
